@@ -6,6 +6,8 @@ This project does moovie recommendation with collaborative filtering using infor
 
 Using this recommendation system, it allows predicting preferences of users towards movies for new (user,movie) pairs.
 
+* Last Update: 08/01/2021
+
 ## Context
 The recommendation relies on moovie ratings that includes more than 43k moovies and 270k users.
 <br/>I tried to predict preferences with a model based approach using collaborative filtering library from [Surprise library](https://surprise.readthedocs.io/en/stable/index.html). 
@@ -20,7 +22,7 @@ But, I realized that this number of users doesn't fit into Memory for a batch le
 * For each chunk, learn the model from known ratings and predict preferences for new (user,movie) pairs.
 * Merge the predictions into a single `evaluation_ratings_out.csv` file.
 
-For the predition, I used the Singular Value Decomposition (SVD) algo from Surprise that appeared to provide relatively good accuracy when doing cross validation.
+For the prediction, I used the Singular Value Decomposition (SVD) algo from Surprise that appeared to provide relatively good accuracy when doing cross validation.
 
 ## How to install
 * Clone this repository
@@ -35,3 +37,4 @@ For the predition, I used the Singular Value Decomposition (SVD) algo from Surpr
 
 ## How to test
 * Basic unit testing of the functions can be done with: `python UnitTest.py -v` 
+
